@@ -13,6 +13,7 @@
         <img src="<?php echo get_template_directory_uri(); ?>/images/logo.png" alt="Logo" class="site-logo">
         <span>Association Languedocienne de Kyudo</span>
     </div>
+    
     <?php
     wp_nav_menu(array(
         'theme_location' => 'primary',
