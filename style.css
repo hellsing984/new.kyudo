@@ -1,0 +1,170 @@
+body {
+    background-color: #d4b996; /* Beige raffiné */
+    font-family: 'Noto Serif JP', serif;
+    margin: 0;
+}
+
+
+/* Effet de fond avec du contraste */
+.hero {
+    background-color: #000 !important; /* Noir profond */
+    color: #fff; /* Texte blanc pour contraste */
+    text-align: center;
+    padding: 120px 20px;
+    box-shadow: inset 0px -50px 50px rgba(0, 0, 0, 0.5);
+}
+
+
+/* Barre de menu inspirée de l'image */
+nav {
+    background-color: #d4b996; /* Beige élégant */
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #5a4639; /* Marron foncé pour contraster */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #5a4639; /* Même marron foncé */
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #fff;
+    background-color: #8c7153; /* Beige foncé au survol */
+    border-radius: 5px;
+}
+
+
+
+/* Animation subtile */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.hero h2 {
+    font-size: 2.8rem;
+    animation: fadeIn 1.5s ease-in-out;
+}
+.events {
+    background-color: #000 ; /* Noir profond */
+    color: #fff; /* Texte blanc pour un bon contraste */
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.1);
+    text-align: center;
+}
+
+
+
+
+.events .btn {
+    display: inline-block;
+    background-color: #5a4639; /* Marron foncé, en accord avec le site */
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.events .btn:hover {
+    background-color: #8c7153; /* Beige foncé au survol */
+}
+
+/* Footer en noir */
+footer {
+    background-color: #000 !important; /* Noir forcé */
+    color: #ddd;
+    text-align: center;
+    padding: 20px;
+}
+.site-logo {
+    height: 50px; /* Taille du logo */
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.lang-btns {
+    display: flex;
+    gap: 5px; /* Réduit l’espace entre les boutons */
+    align-items: center;
+}
+
+.lang-btns a {
+    background-color: #5a4639;
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.lang-btns a:hover {
+    background-color: #8c7153;
+}
+
+/* Supprimer les points noirs éventuels */
+.lang-btns li {
+    list-style: none;
+}
+
+
+/* Ajustements pour les mobiles */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-title {
+        font-size: 1.5rem;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .hero {
+        padding: 60px 15px;
+        font-size: 1rem;
+    }
+
+    .events {
+        padding: 15px;
+        font-size: 0.9rem;
+    }
+
+    footer {
+        padding: 15px;
+        font-size: 0.8rem;
+    }
+}
