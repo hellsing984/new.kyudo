@@ -1,6 +1,13 @@
 <?php get_header(); ?> <!-- Inclusion du header du site -->
 
 <main>
+    <!-- Section principale avec un fond visuel -->
+    <section class="hero">
+        <h2>MA PAGE D ACCUEIL</h2>
+        <p>Explore la puissance et la discipline d'une époque révolue.</p>
+        <a href="#about" class="btn">En savoir plus</a> <!-- Bouton pour naviguer vers la section À propos -->
+    </section>
+    
     <!-- Section Événements & Stages -->
     <section class="events">
         <h2>Événements & Stages</h2>
@@ -33,3 +40,20 @@
 </main>
 
 <?php get_footer(); ?> <!-- Inclusion du footer du site -->
+
+<!-- Script permettant de changer la langue du site -->
+<script>
+function toggleLanguage() {
+    let currentLang = document.documentElement.lang;
+
+    if (currentLang === "fr") {
+        document.documentElement.lang = "en";
+        localStorage.setItem("siteLang", "en"); 
+    } else {
+        document.documentElement.lang = "fr";
+        localStorage.setItem("siteLang", "fr"); 
+    }
+
+    location.reload(); 
+}
+</script>
