@@ -26,7 +26,6 @@
     <a href="/en" class="lang-btn">🇬🇧 English</a>
 </div>
 </nav>
-
 </header>
 </body>
 
